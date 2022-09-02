@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.31bacda3.css",
+    "main.js": "/my-app/static/js/main.d56d1743.js",
+    "static/js/787.e39f5d26.chunk.js": "/my-app/static/js/787.e39f5d26.chunk.js",
+    "static/media/boxicons.svg": "/my-app/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
+    "static/media/boxicons.eot": "/my-app/static/media/boxicons.21f7c5dd64d88e1fc666.eot",
+    "static/media/boxicons.woff": "/my-app/static/media/boxicons.02aa967c5bfb9489501a.woff",
+    "static/media/boxicons.ttf": "/my-app/static/media/boxicons.ad0ddae357213656b3e6.ttf",
+    "static/media/bootstrap-icons.woff?": "/my-app/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/boxicons.woff2": "/my-app/static/media/boxicons.0335b427967c56248ea6.woff2",
+    "static/media/bootstrap-icons.woff2?": "/my-app/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "index.html": "/my-app/index.html",
+    "main.31bacda3.css.map": "/my-app/static/css/main.31bacda3.css.map",
+    "main.d56d1743.js.map": "/my-app/static/js/main.d56d1743.js.map",
+    "787.e39f5d26.chunk.js.map": "/my-app/static/js/787.e39f5d26.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31bacda3.css",
+    "static/js/main.d56d1743.js"
+  ]
+}
