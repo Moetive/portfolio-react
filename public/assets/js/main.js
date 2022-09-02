@@ -1,9 +1,4 @@
-/**
-* Template Name: Folio - v4.8.0
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -97,7 +92,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('#back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -113,7 +108,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '#mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -122,7 +117,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '#navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -132,14 +127,14 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '#scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
 
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
+        let navbarToggle = select('#mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
@@ -161,11 +156,11 @@
   /**
    * Hero type effect
    */
-  const typed = select('.typed')
+  const typed = select('#typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+    new Typed('#typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
@@ -177,7 +172,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.services-slider', {
+  new Swiper('#services-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -186,7 +181,7 @@
     },
     slidesPerView: 'auto',
     pagination: {
-      el: '.swiper-pagination',
+      el: '#swiper-pagination',
       type: 'bullets',
       clickable: true
     },
@@ -210,10 +205,10 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('#portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+        itemSelector: '#portfolio-item',
         layoutMode: 'fitRows'
       });
 
@@ -239,13 +234,13 @@
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '#portfolio-lightbox'
   });
 
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('#portfolio-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -253,7 +248,7 @@
       disableOnInteraction: false
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '#swiper-pagination',
       type: 'bullets',
       clickable: true
     }
